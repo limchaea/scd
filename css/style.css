@@ -1,0 +1,15 @@
+:root {
+    --mainColor: #f13737;
+    --subTextColor: #6f6f6f;
+    --titleSize: 6.4rem;
+    --listTextSize: 2.4rem;
+    --textSize: 1.6rem;
+    --large-radius:10rem;
+    --middle-radius:4rem;
+}
+
+.inner{
+    max-width:1600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 255, 0.2);
+}
