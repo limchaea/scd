@@ -451,10 +451,6 @@ section {
                     }
                 }
 
-                &:first-child {
-                    a {}
-                }
-
                 &:nth-child(2) {
                     a {
                         background-color: rgba(217, 217, 217, 0.3);
@@ -468,10 +464,6 @@ section {
                         }
                     }
                 }
-            }
-
-            &:nth-child(3) {
-                a {}
             }
         }
     }
