@@ -1,6 +1,11 @@
 /* header */
 header {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
 
     .inner {
         display: flex;
@@ -15,14 +20,8 @@ header {
             display: flex;
             gap: 8rem;
 
-            li {
+            >li {
                 position: relative;
-
-                a {
-                    font-size: 2rem;
-                    display: block;
-                    line-height: 70px;
-                }
 
                 &::after {
                     content: "";
@@ -41,9 +40,15 @@ header {
                         width: 100%;
                     }
 
-                    a {
+                    >a {
                         color: var(--mainColor);
                     }
+                }
+
+               >a {
+                    font-size: 2rem;
+                    display: block;
+                    line-height: 70px;
                 }
             }
         }
@@ -106,6 +111,8 @@ header {
 
 /* footer */
 footer {
+    padding-top: 7rem;
+
     .inner {
         max-width: 1700px;
         background: #636363;
@@ -116,6 +123,39 @@ footer {
         font-size: var(--textSize);
         color: #f3f3f3;
         font-weight: 200;
+        position: relative;
+
+        .top_btn {
+            position: absolute;
+            top: -70px;
+            right: 0;
+
+            a {
+                display: block;
+                width: 6.5rem;
+                height: 6.5rem;
+                border-radius: 5rem;
+                background: rgba(255, 38, 38, 0.95);
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.6rem;
+                font-weight: 500;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background: url(../images/icon-arrow-45deg.svg);
+                    background-size: 100%;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
 
 
         .footer_left {
@@ -145,6 +185,7 @@ footer {
 
             .footer_menu {
                 gap: 5rem;
+                font-weight: 300;
             }
 
             .sns_list {
